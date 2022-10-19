@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  simple-api:
+    build: ./API
+    restart: always
+  simple-web:
+    build: ./Web
+    restart: always
+    ports:
+      - "8080:80"
